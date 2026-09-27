@@ -6,6 +6,7 @@ This repository contains MD simulation setup files, selected outputs, and analys
 
 - `analysis/CH1_CH2_500ns_Replicas.ipynb`: plots CH-domain-to-actin distance traces from 500 ns replica COLVAR files.
 - `analysis/Map_Correlation.ipynb`: computes CryoJax map-correlation values between ACTN4 ABD MD trajectories and the segmented weak-state cryo-EM map.
+- `analysis/Rotation_Angle_Analysis.ipynb`: plots CH1/CH2 end-to-end vector reorientation for the four extended simulations using the included `analysis/rotation_data/` angle files.
 - `CH1_pointed/`, `CH2_pointed/`, `CH1_reverseface/`, `CH2_reverseface/`: GROMACS inputs, topologies, starting structures, selected run files, and selected COLVAR outputs.
 - `cryo-struct/wtactn4_segmented_resampled.mrc`: segmented/resampled weak-state cryo-EM map used for map correlation.
 - `environment.yaml`: conda environment for the analysis notebooks.
@@ -22,7 +23,7 @@ https://nyu.box.com/s/kev5y3sp2tm5l3mbowaai5e81u93wqo7
 
 ## Running the notebooks
 
-The replica notebook uses COLVAR files included in this repository. The map-correlation notebook also requires the NYU Box trajectories and `cryo-struct/wtactn4_segmented_resampled.mrc`.
+The replica notebook uses COLVAR files included in this repository. The rotation-angle notebook runs directly from the included angle files in `analysis/rotation_data/`. The map-correlation notebook also requires the NYU Box trajectories and `cryo-struct/wtactn4_segmented_resampled.mrc`.
 
 ## Simulation files
 
